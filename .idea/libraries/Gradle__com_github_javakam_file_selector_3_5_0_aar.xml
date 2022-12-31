@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.javakam:file.selector:3.5.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/84d9b7dc3bb3e448fca145c0575c8186/transformed/file.selector-3.5.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/84d9b7dc3bb3e448fca145c0575c8186/transformed/file.selector-3.5.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/84d9b7dc3bb3e448fca145c0575c8186/transformed/file.selector-3.5.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.javakam/file.selector/3.5.0/104ce08a44b1e26de0fbeee90ccbbdb818f43c1b/file.selector-3.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

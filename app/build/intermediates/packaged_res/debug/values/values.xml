@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="add_button"> 添加</string>
+    <string name="add_task">Add ToDo Notes</string>
+    <string name="app_name">待办清单</string>
+    <string name="back_arrow">Back Arrow</string>
+    <string name="close_icon">Close Icon</string>
+    <string name="delete_all_action">删除全部</string>
+    <string name="delete_all_tasks">删除全部</string>
+    <string name="delete_all_tasks_confirmation">确定要删除所有待办项吗?该操作不可被撤销.</string>
+    <string name="delete_icon">Delete Icon</string>
+    <string name="delete_task">删除 \'%1$s\'? </string>
+    <string name="delete_task_confirmation">你确定要删除 \'%1$s\'? </string>
+    <string name="description">内容(可为空)</string>
+    <string name="drop_down_arrow">Drop-Down Arrow Icon</string>
+    <string name="empty_content">为查询到待办项</string>
+    <string name="export_Tasks">导出待办</string>
+    <string name="import_Tasks">导入待办</string>
+    <string name="list_screen_title">待办清单</string>
+    <string name="no">取消</string>
+    <string name="sad_face_icon">Sad Face Icon</string>
+    <string name="search_action"> 搜索</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="search_placeholder">查询</string>
+    <string name="share_Tasks">分享待办</string>
+    <string name="sort_action">Sort ToDo Notes</string>
+    <string name="title">标题</string>
+    <string name="undo">撤销</string>
+    <string name="update_icon">Update Icon</string>
+    <string name="yes">确定</string>
+    <style name="Theme.ToDoList" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/purple_700</item>
+    </style>
+</resources>

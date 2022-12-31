@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Gredicer:datetimepicker:V1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/862e05e1c9141a241157258b87b90aca/transformed/datetimepicker-V1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/862e05e1c9141a241157258b87b90aca/transformed/datetimepicker-V1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/862e05e1c9141a241157258b87b90aca/transformed/datetimepicker-V1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Gredicer/datetimepicker/V1.0.0/2754bff60e88815695741fd339a8ef5f189596e0/datetimepicker-V1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

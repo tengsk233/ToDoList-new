@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\ToDoList-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\zhoux\\.gradle\\caches\\transforms-3\\84d9b7dc3bb3e448fca145c0575c8186\\transformed\\file.selector-3.5.0\\res\\values-en\\values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,140,222,303,384",
+                        "endColumns": "84,81,80,80,81",
+                        "endOffsets": "135,217,298,379,461"
+                    }
+                }
+            ]
+        }
+    ]
+}

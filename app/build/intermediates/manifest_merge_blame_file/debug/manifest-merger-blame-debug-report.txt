@@ -1,0 +1,184 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.todolist"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\ToDoList-master\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\ToDoList-master\app\src\main\AndroidManifest.xml
+10    <!-- SDCard中创建与删除文件权限 -->
+11    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+11-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:6:5-7:47
+11-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:6:22-81
+12    <!-- 读取SDCard数据权限 -->
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:9:5-79
+13-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:9:22-77
+14    <!-- 向SDCard写入数据权限 -->
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:11:5-80
+15-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:11:22-78
+16    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+16-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:12:5-13:40
+16-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:12:22-79
+17    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+17-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:14:5-79
+17-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:14:22-76
+18
+19    <application
+19-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:15:5-48:19
+20        android:name="com.example.todolist.HiltApp"
+20-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:16:9-32
+21        android:allowBackup="true"
+21-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:17:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.7.0] C:\Users\zhoux\.gradle\caches\transforms-3\ad32739425e9c8d46e749899f28578d8\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:18:9-43
+25        android:label="@string/app_name"
+25-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:19:9-41
+26        android:requestLegacyExternalStorage="true"
+26-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:23:9-52
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:20:9-54
+28        android:supportsRtl="true"
+28-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:21:9-35
+29        android:testOnly="true"
+30        android:theme="@style/Theme.ToDoList" >
+30-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:22:9-46
+31        <activity
+31-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:24:9-34:20
+32            android:name="com.example.todolist.MainActivity"
+32-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:25:13-41
+33            android:exported="true"
+33-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:26:13-36
+34            android:label="@string/app_name"
+34-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:27:13-45
+35            android:theme="@style/Theme.ToDoList" >
+35-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:28:13-50
+36            <intent-filter>
+36-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:29:13-33:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:30:17-69
+37-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:30:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:32:17-77
+39-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:32:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <receiver
+43-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:35:9-37:38
+44            android:name="com.example.todolist.notification.MyAlarm"
+44-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:35:19-55
+45            android:enabled="true"
+45-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:36:13-35
+46            android:exported="true" />
+46-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:37:13-36
+47
+48        <provider
+48-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:38:9-46:20
+49            android:name="androidx.core.content.FileProvider"
+49-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:39:13-62
+50            android:authorities="com.example.todolist.fileprovider"
+50-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:40:13-68
+51            android:exported="false"
+51-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:41:13-37
+52            android:grantUriPermissions="true" >
+52-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:42:13-47
+53            <meta-data
+53-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:43:13-45:54
+54                android:name="android.support.FILE_PROVIDER_PATHS"
+54-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:44:17-67
+55                android:resource="@xml/file_paths" />
+55-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:45:17-51
+56        </provider>
+57
+58        <activity
+58-->[androidx.compose.ui:ui-tooling:1.0.1] C:\Users\zhoux\.gradle\caches\transforms-3\ad953e90f74bae6c73ae0b9c261703e6\transformed\ui-tooling-1.0.1\AndroidManifest.xml:25:9-27:39
+59            android:name="androidx.compose.ui.tooling.PreviewActivity"
+59-->[androidx.compose.ui:ui-tooling:1.0.1] C:\Users\zhoux\.gradle\caches\transforms-3\ad953e90f74bae6c73ae0b9c261703e6\transformed\ui-tooling-1.0.1\AndroidManifest.xml:26:13-71
+60            android:exported="true" />
+60-->[androidx.compose.ui:ui-tooling:1.0.1] C:\Users\zhoux\.gradle\caches\transforms-3\ad953e90f74bae6c73ae0b9c261703e6\transformed\ui-tooling-1.0.1\AndroidManifest.xml:27:13-36
+61
+62        <service
+62-->[androidx.room:room-runtime:2.4.2] C:\Users\zhoux\.gradle\caches\transforms-3\2f7517f971aced4541f73715f10e4372\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
+63            android:name="androidx.room.MultiInstanceInvalidationService"
+63-->[androidx.room:room-runtime:2.4.2] C:\Users\zhoux\.gradle\caches\transforms-3\2f7517f971aced4541f73715f10e4372\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
+64            android:directBootAware="true"
+64-->[androidx.room:room-runtime:2.4.2] C:\Users\zhoux\.gradle\caches\transforms-3\2f7517f971aced4541f73715f10e4372\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
+65            android:exported="false" />
+65-->[androidx.room:room-runtime:2.4.2] C:\Users\zhoux\.gradle\caches\transforms-3\2f7517f971aced4541f73715f10e4372\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
+66
+67        <provider
+67-->[com.github.javakam:file.core:3.5.0] C:\Users\zhoux\.gradle\caches\transforms-3\dac7e00f1cf7237f8d10e531d49ade65\transformed\file.core-3.5.0\AndroidManifest.xml:16:9-24:20
+68            android:name="ando.file.core.FileProvider"
+68-->[com.github.javakam:file.core:3.5.0] C:\Users\zhoux\.gradle\caches\transforms-3\dac7e00f1cf7237f8d10e531d49ade65\transformed\file.core-3.5.0\AndroidManifest.xml:17:13-55
+69            android:authorities="com.example.todolist.andoFileProvider"
+69-->[com.github.javakam:file.core:3.5.0] C:\Users\zhoux\.gradle\caches\transforms-3\dac7e00f1cf7237f8d10e531d49ade65\transformed\file.core-3.5.0\AndroidManifest.xml:18:13-68
+70            android:exported="false"
+70-->[com.github.javakam:file.core:3.5.0] C:\Users\zhoux\.gradle\caches\transforms-3\dac7e00f1cf7237f8d10e531d49ade65\transformed\file.core-3.5.0\AndroidManifest.xml:19:13-37
+71            android:grantUriPermissions="true" >
+71-->[com.github.javakam:file.core:3.5.0] C:\Users\zhoux\.gradle\caches\transforms-3\dac7e00f1cf7237f8d10e531d49ade65\transformed\file.core-3.5.0\AndroidManifest.xml:20:13-47
+72            <meta-data
+72-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:43:13-45:54
+73                android:name="android.support.FILE_PROVIDER_PATHS"
+73-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:44:17-67
+74                android:resource="@xml/ando_paths" />
+74-->D:\ToDoList-master\app\src\main\AndroidManifest.xml:45:17-51
+75        </provider>
+76        <provider
+76-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\076cb6443f33be31c40c1e4a04162922\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+77            android:name="androidx.startup.InitializationProvider"
+77-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\076cb6443f33be31c40c1e4a04162922\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+78            android:authorities="com.example.todolist.androidx-startup"
+78-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\076cb6443f33be31c40c1e4a04162922\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+79            android:exported="false" >
+79-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\076cb6443f33be31c40c1e4a04162922\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+80            <meta-data
+80-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\076cb6443f33be31c40c1e4a04162922\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+81                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+81-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\076cb6443f33be31c40c1e4a04162922\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+82                android:value="androidx.startup" />
+82-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zhoux\.gradle\caches\transforms-3\076cb6443f33be31c40c1e4a04162922\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+83            <meta-data
+83-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\zhoux\.gradle\caches\transforms-3\0131387c000680b792f29f4d345ca7a8\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+84                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+84-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\zhoux\.gradle\caches\transforms-3\0131387c000680b792f29f4d345ca7a8\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+85                android:value="androidx.startup" />
+85-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\zhoux\.gradle\caches\transforms-3\0131387c000680b792f29f4d345ca7a8\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+86            <meta-data
+86-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:31:13-33:52
+87                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+87-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:32:17-85
+88                android:value="androidx.startup" />
+88-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:33:17-49
+89        </provider>
+90
+91        <receiver
+91-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:36:9-45:20
+92            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+92-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:37:13-76
+93            android:directBootAware="false"
+93-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:38:13-44
+94            android:enabled="true"
+94-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:39:13-35
+95            android:exported="true"
+95-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:40:13-36
+96            android:permission="android.permission.DUMP" >
+96-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:41:13-57
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:42:13-44:29
+98                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:43:17-91
+98-->[androidx.profileinstaller:profileinstaller:1.1.0-beta03] C:\Users\zhoux\.gradle\caches\transforms-3\ecef862a9286f590832c634ae4af61b6\transformed\profileinstaller-1.1.0-beta03\AndroidManifest.xml:43:25-88
+99            </intent-filter>
+100        </receiver>
+101    </application>
+102
+103</manifest>
